@@ -67,9 +67,9 @@ app.post("/auth", async (req, res) => {
 	const payloadCopy = JSON.parse(JSON.stringify(payload));
 
 	if (expired) {
-		payloadCopy.exp = Math.floor(Date.now() / 1000) - 1000; // 1000 seconds in the past
+		payloadCopy.exp = Math.floor(Date.now() / 1000) - 1000;
 	} else {
-		payloadCopy.exp = Math.floor(Date.now() / 1000) + 3600; // 1 hour in the future
+		payloadCopy.exp = Math.floor(Date.now() / 1000) + 3600;
 	}
 
 	await getJWT(payloadCopy)

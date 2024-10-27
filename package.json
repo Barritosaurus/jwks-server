@@ -1,5 +1,5 @@
 {
-  "name": "project_01",
+  "name": "project_02",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.0",
-    "node-jose": "^2.2.0"
+    "node-jose": "^2.2.0",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "jest": "^29.7.0",
